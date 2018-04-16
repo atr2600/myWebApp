@@ -1,0 +1,68 @@
+<%# views/layout.ejs %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-----  This is for the contact form     ----->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+
+<style>
+
+    .navbar {
+        color:#2196F3 !important;
+        background-color: #2196F3 !important;
+        border-color:  #2196F3 !important;
+    }
+
+    .navbar-inverse{
+        color:#2196F3 !important;
+    }
+</style>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="home">Brandon Geraci</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="home">Home</a></li>
+            <li><a href="projects">Projects</a></li>
+            <li><a href="experience">Experience</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<div class="container body-content">
+    <%- content %>
+    <hr />
+    <footer>
+        <p id = "footer">&copy;</p>
+    </footer>
+</div>
+
+<script>
+        var d= new Date();
+        var n = d.getFullYear();
+        document.getElementById("footer").innerHTML += " ";
+        document.getElementById("footer").innerHTML += n;
+        document.getElementById("footer").innerHTML += " - Brandon Geraci";
+
+</script>
+
+</body>
+</html>
