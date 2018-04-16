@@ -14,19 +14,30 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <!------ Include the above in your HEAD tag ---------->
+
+
 </head>
 
 <style>
 
     .navbar {
-        color:#2196F3 !important;
-        background-color: #2196F3 !important;
-        border-color:  #2196F3 !important;
+        background-color: #2962ff !important;
+        color: white !important;
     }
 
-    .navbar-inverse{
-        color:#2196F3 !important;
+    .navbar-inverse .navbar-nav > li > a {
+        color : white;
     }
+
+    .navbar-inverse #nav > .active > a {
+        background-color: red;
+    }
+
+
+    .navbar-brand {
+        color: white !important;
+    }
+
 </style>
 
 <body>
@@ -37,14 +48,17 @@
             <a class="navbar-brand" href="home">Brandon Geraci</a>
         </div>
         <ul class="nav navbar-nav">
-            <li class="active"><a href="home">Home</a></li>
-            <li><a href="projects">Projects</a></li>
-            <li><a href="experience">Experience</a></li>
-            <li><a href="contact">Contact</a></li>
+            <li id="tabHome"><a href="home">Home</a></li>
+            <li id="tabProjects"><a href="projects">Projects</a></li>
+            <li id="tabExperience"><a href="experience">Experience</a></li>
+            <li id="tabContact"><a href="contact">Contact</a></li>
         </ul>
     </div>
 </nav>
 
+<script>
+    
+</script>
 
 
 <div class="container body-content">
