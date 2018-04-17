@@ -13,6 +13,8 @@ var homeRouter = require('./routes/index');
 
 var app = express();
 
+app.set("port",45644);
+
 // view engine setup
 app.engine('ejs',require('express-ejs-extend'));
 app.set('views', path.join(__dirname, 'views'));
@@ -50,3 +52,8 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+app.listen(app.get("port"),function(){
+	console.log('myWebApp listening on port: ', app.get("port"));
+
+});
