@@ -48,6 +48,10 @@
 </div>
 
 <script>
+
+    document.getElementById("tabHome").removeAttribute("class");
+    document.getElementById("tabContact").setAttribute("class","active");
+
     $(document).ready(function(){
         $('#characterLeft').text('140 characters left');
         $('#message').keydown(function () {
