@@ -13,7 +13,13 @@ var experienceRouter = require('./routes/experience');
 var homeRouter = require('./routes/index');
 var militaryRouter = require('./routes/military');
 
+//Email stuff to learn!!!!
+//https://forum.freecodecamp.org/t/is-nodemailer-secure/35135/2
+//https://www.w3schools.com/nodejs/nodejs_email.asp
+
+
 var app = express();
+var nodemailer = require('nodemailer');
 
 app.set("port",45644);
 
