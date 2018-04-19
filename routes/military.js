@@ -1,10 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET contact page. */
+/* GET military page. */
 router.get('/', function(req, res, next) {
-
-    res.render('contact', { title: 'Contact' });
+    res.render('military', { title: 'Military Experience' });
 });
 
 module.exports = router;

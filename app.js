@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const sendmail = require('sendmail')();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -10,6 +11,7 @@ var contactRouter = require('./routes/contact');
 var projectsRouter = require('./routes/projects');
 var experienceRouter = require('./routes/experience');
 var homeRouter = require('./routes/index');
+var militaryRouter = require('./routes/military');
 
 var app = express();
 
@@ -32,6 +34,7 @@ app.use('/contact',contactRouter);
 app.use('/projects',projectsRouter);
 app.use('/experience',experienceRouter);
 app.use('/home',homeRouter);
+app.use('/military',militaryRouter);
 
 app.use('/awards',express.static(__dirname + '/awards'));
 
