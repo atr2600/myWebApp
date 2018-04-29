@@ -12,6 +12,7 @@ var projectsRouter = require('./routes/projects');
 var experienceRouter = require('./routes/experience');
 var homeRouter = require('./routes/index');
 var militaryRouter = require('./routes/military');
+var resumeRouter = require('./routes/resume');
 
 //Email stuff to learn!!!!
 //https://forum.freecodecamp.org/t/is-nodemailer-secure/35135/2
@@ -41,6 +42,7 @@ app.use('/projects',projectsRouter);
 app.use('/experience',experienceRouter);
 app.use('/home',homeRouter);
 app.use('/military',militaryRouter);
+app.use('/resume',resumeRouter);
 
 app.use('/awards',express.static(__dirname + '/awards'));
 
