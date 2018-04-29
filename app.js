@@ -19,7 +19,7 @@ var militaryRouter = require('./routes/military');
 
 
 var app = express();
-var nodemailer = require('nodemailer');
+//var nodemailer = require('nodemailer');
 
 app.set("port",45644);
 
