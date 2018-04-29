@@ -1,0 +1,16 @@
+
+<%# views/resume.ejs %>
+
+<% extend('layout') %>
+
+<h1>My resume</h1>
+
+<embed src="awards/Resume.pdf" width=100% height="1000" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+
+
+
+<script>
+    document.getElementById("tabHome").removeAttribute("class");
+    document.getElementById("tabResume").setAttribute("class","active");
+
+</script>
