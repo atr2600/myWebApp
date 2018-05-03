@@ -4,18 +4,37 @@
 <% extend('layout') %>
 <style>
 
-
-    .jumbotron .img{
-        margin-top: 20px;
-        background: #000 url('/awards/35945207-tech-wallpaper.jpg') top center no-repeat !important;
-        background-size: 100% 100%;
-        background-position: center center;
-        margin-top: 20px;
-        height: 100%;
-        width: 100%;
+    .jumbotron-billboard .img {
+        margin-bottom: 0px;
         opacity: 0.2;
+        color: #fff;
+        background: #000 url("/awards/35945207-tech-wallpaper.jpg") top center no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        overflow: hidden;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+    }
+    .jumbotron h2 {margin-top:0;}
+    .jumbotron {
+        position:relative;
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+    .jumbotron .container {
+        position:relative;
+        z-index:2;
     }
 
+    @media screen and (max-width: 768px) {
+        .jumbotron {
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+    }
     /* Create three equal columns that floats next to each other */
     .column {
         border-radius: 25px;
@@ -32,32 +51,36 @@
         content: "";
         display: table;
         clear: both;
-    }
 
+    }
+    .center {
+        margin: auto;
+        width: 90%;
+    }
 
 
 </style>
 
-<div align = "center">
-    <div class="jumbotron">
-        <div class = "img"></div>
-        <div class="padding">
-            <h1 align="right" style="color: black">Software Engineer</h1>
-            <p align="right" style="color: black" class="lead">
-                “Life doesn't have a ctrl-z. Type wisely.”
-            </p>
-            <p align="right" style="color: black" class="lead">
-                ― Imtiaz Iqbal
-            </p>
+<div class="jumbotron jumbotron-billboard">
+    <div class="img"></div>
+    <div class="container">
+        <div class="row">
+            <div align="right">
+                <h1>Software Engineer</h1>
+                <p style="color:black";>
+                    Software Powers the Internet
+                </p>
+                <a href="#" class="btn btn-success btn-lg">Sign Up</a>
+            </div>
         </div>
     </div>
 </div>
 
-<div align="center">
+<div class="center">
     <div align="center">
         <h3>My GitHub Activity</h3>
     </div>
-    <div align="center" class="row">
+    <div class="row center">
         <div class="column" style="background-color:lightblue;float:left;">
             <h2>Account</h2>
             <div align="center" class="github-card" data-user="atr2600"></div>
