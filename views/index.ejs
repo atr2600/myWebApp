@@ -4,14 +4,16 @@
 <% extend('layout') %>
 <style>
 
-    .jumbotron {
+
+    .jumbotron .img{
         margin-top: 20px;
-        background-image: url('/awards/35945207-tech-wallpaper.jpg');
-        background-repeat: no-repeat;
+        background: #000 url('/awards/35945207-tech-wallpaper.jpg') top center no-repeat !important;
         background-size: 100% 100%;
         background-position: center center;
+        margin-top: 20px;
         height: 100%;
         width: 100%;
+        opacity: 0.2;
     }
 
     /* Create three equal columns that floats next to each other */
@@ -21,6 +23,8 @@
         width: 50%;
         padding: 10px;
         border: 10px solid white;
+        min-width: 500px;
+        max-width: 700px;
     }
 
     /* Clear floats after the columns */
@@ -30,33 +34,36 @@
         clear: both;
     }
 
+
+
 </style>
 
 <div align = "center">
     <div class="jumbotron">
+        <div class = "img"></div>
         <div class="padding">
-            <h1 align="right" style="color: white">Software Engineer</h1>
-            <p align="right" style="color: white" class="lead">
+            <h1 align="right" style="color: black">Software Engineer</h1>
+            <p align="right" style="color: black" class="lead">
                 “Life doesn't have a ctrl-z. Type wisely.”
             </p>
-            <p align="right" style="color: white" class="lead">
+            <p align="right" style="color: black" class="lead">
                 ― Imtiaz Iqbal
             </p>
         </div>
     </div>
 </div>
 
-<div>
+<div align="center">
     <div align="center">
         <h3>My GitHub Activity</h3>
     </div>
     <div align="center" class="row">
-        <div class="column" style="background-color:lightblue;">
+        <div class="column" style="background-color:lightblue;float:left;">
             <h2>Account</h2>
             <div align="center" class="github-card" data-user="atr2600"></div>
             <script src="http://lab.lepture.com/github-cards/widget.js"></script>
         </div>
-        <div class="column" style="background-color:cornflowerblue;">
+        <div class="column" style="background-color:cornflowerblue;overflow: hidden;">
             <h2>Repositories</h2>
             <div align="center" class="github-card" data-github="atr2600/myWebApp"></div>
             <script src="http://lab.lepture.com/github-cards/widget.js"></script>
