@@ -65,22 +65,22 @@
     <div class="awards" align="center">
         <h1>Awards</h1>
         <div class="btn-group">
-            <button><img src="/awards/1.png"></button>
+            <button onclick="arcom()"><img src="/awards/1.png"></button>
         </div>
         <div class="btn-group">
-            <button><img src="/awards/2-1.png"></button>
-            <button><img src="/awards/2-2.png"></button>
-            <button><img src="/awards/2-3.png"></button>
+            <button onclick="aam()"><img src="/awards/2-1.png"></button>
+            <button onclick="conduct()"><img src="/awards/2-2.png"></button>
+            <button onclick="nationaldefense()"><img src="/awards/2-3.png"></button>
         </div>
         <div class="btn-group">
-            <button><img src="/awards/3-1.png"></button>
-            <button><img src="/awards/3-2.png"></button>
-            <button><img src="/awards/3-3.png"></button>
+            <button onclick="afghanistan()"><img src="/awards/3-1.png"></button>
+            <button onclick="globalwar()"><img src="/awards/3-2.png"></button>
+            <button onclick="Service()"><img src="/awards/3-3.png"></button>
         </div>
         <div class="btn-group">
-            <button><img src="/awards/4-1.png"></button>
-            <button><img src="/awards/4-2.png"></button>
-            <button><img src="/awards/4-3.png"></button>
+            <button onclick="armyservice()"><img src="/awards/4-1.png"></button>
+            <button onclick="overseas()"><img src="/awards/4-2.png"></button>
+            <button onclick="nato()"><img src="/awards/4-3.png"></button>
         </div>
     </div>
 </div>
@@ -105,6 +105,36 @@
 </div>
 
 <script>
+    function arcom() {
+        alert("The Army Commendation Medal is awarded to any member of the Armed Forces of the United States other than General Officers who, while serving in any capacity with the U.S. Army after December 6, 1941, distinguished themselves by heroism, meritorious achievement or meritorious service.");
+    }
+    function aam(){
+        alert("The Army Achievement Medal (AAM) is granted to personnel for outstanding achievement or meritorious service not of a nature that merits the Commendation Medal. The AAM is commonly only given to officers in the pay grade of O-4 and below, as well as enlisted service members below the grade of E-7.\n https://en.wikipedia.org/wiki/Achievement_Medal ")
+    }
+    function conduct(){
+        alert("The Army Good Conduct Medal was established by Executive Order 8809, dated 28 June 1941, and authorized the award for soldiers completing three years active service after that date. \n https://en.wikipedia.org/wiki/Good_Conduct_Medal_(United_States)")
+    }
+    function nato(){
+        alert("NATO medals authorized for wear include the NATO Medal for Former Yugoslavia, the NATO Medal for Kosovo Service, both of the Article 5 Medals, the Non-Article 5 medals for the Balkans and Afghanistan (ISAF), The NATO Meritorious Service Medal and the Macedonia NATO Medal and the Non-Article 5 Medal for service in Iraq, under the NTM-I.[10] \nhttps://en.wikipedia.org/wiki/NATO_Medal#Non-Article_5_Medal")
+    }
+    function afghanistan(){
+        alert("The Afghanistan Campaign Medal is awarded to any member of the United States military who has performed duty within the borders of Afghanistan (or its airspace) for a period of thirty consecutive days or sixty non-consecutive days.\n https://en.wikipedia.org/wiki/Afghanistan_Campaign_Medal ")
+    }
+    function armyservice(){
+        alert("The Army Service Ribbon is awarded to members of the Army, Army Reserve, and Army National Guard for successful completion of initial-entry training, which for officers is considered to be successful completion of their basic/orientation or higher level course. Enlisted soldiers will be awarded the ribbon upon successful completion of their initial MOS producing course. If a soldier is assigned a MOS based on civilian or other branch of service-acquired skills, this ribbon will be awarded on honorable completion of 4 months active service.\n https://en.wikipedia.org/wiki/Army_Service_Ribbon")
+    }
+    function overseas(){
+        alert("The Army Overseas Service Ribbon was first issued in August 1981.[1] It is presented to any member of the United States Army who completes a standard overseas tour of duty.\n https://en.wikipedia.org/wiki/Overseas_Service_Ribbon")
+    }
+    function nationaldefense(){
+        alert("The National Defense Service Medal (NDSM) is awarded to anyone who serves on active duty in the United States Armed Forces during the War on Terrorism period..")
+    }
+    function Service(){
+        alert("Received this award after my Liberia deployment during the ebola outbreak. The Armed Forces Service Medal (AFSM) is a military award of the United States military that was created on January 11, 1996 by President Bill Clinton under Executive Order 12985. The AFSM is a deployed service medal that is presented to those service members who engage in \"significant activity\" for which no other U.S. campaign or service medal is authorized.\n https://en.wikipedia.org/wiki/Armed_Forces_Service_Medal")
+    }
+    function globalwar(){
+        alert("The U.S. Army's regulations state that all soldiers \"on active duty, including Reserve Component Soldiers [sic] mobilized, or Army National Guard Soldiers [sic] activated on or after 11 September 2001 to a date to be determined having served 30 consecutive days or 60 nonconsecutive days are authorized the GWOTSM.\" The GWOT-SM was awarded automatically to all service members on Active Duty between 11 September 2001 and 31 March 2004. While the award is no longer automatic, the termination \"date to be determined\" has not been set. The Battalion Commander is the approval authority for the GWOT-SM. Service members are still eligible for the medal provided they meet the criteria in AR 600-8-22.\n https://en.wikipedia.org/wiki/Global_War_on_Terrorism_Service_Medal")
+    }
 
     document.getElementById("tabHome").removeAttribute("class");
     document.getElementById("tabExperience").setAttribute("class","active");

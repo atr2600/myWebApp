@@ -24,7 +24,7 @@ var problemSolverRouter = require('./routes/problemSolver');
 var app = express();
 //var nodemailer = require('nodemailer');
 
-app.set("port",80);
+app.set("port",5555);
 
 // view engine setup
 app.engine('ejs',require('express-ejs-extend'));
